@@ -3,6 +3,7 @@ import numpy as np
 import torch
 from models.logreg import LogRegModel
 from models.distilbert import DistilBertModel
+from models.deberta import DebertaModel
 
 
 def set_seed(seed):
@@ -14,25 +15,21 @@ def set_seed(seed):
 
 
 def get_model(model_name):
-    """
-    Returns a fresh untrained model instance.
-    model_name is either 'logreg' or 'distilbert'.
-    """
+    """Returns a fresh untrained model. model_name is 'logreg', 'distilbert', or 'deberta'."""
     if model_name == "logreg":
         return LogRegModel()
     elif model_name == "distilbert":
         return DistilBertModel()
+    elif model_name == "deberta":
+        return DebertaModel()
     else:
         raise ValueError(
-            f"Unknown model: {model_name}. Choose 'logreg' or 'distilbert'."
+            f"unknown model: {model_name}. choose 'logreg', 'distilbert', or 'deberta'."
         )
 
 
 def train(model_name, train_texts, train_labels, seed):
-    """
-    Sets the seed, builds a fresh model, trains it, returns it.
-    That's the whole job.
-    """
+    """Sets the seed, builds a fresh model, trains it, returns it."""
     set_seed(seed)
     model = get_model(model_name)
     model.fit(train_texts, train_labels)
