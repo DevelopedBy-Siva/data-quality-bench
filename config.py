@@ -11,6 +11,8 @@ SEEDS = [42, 43, 44]
 
 NOISE_LEVELS = [0.0, 0.1, 0.2, 0.4]
 
+TIPPING_POINT_NOISE_LEVELS = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+
 NOISE_TYPES = ["label", "text", "structural"]
 
 LOGREG_CONFIG = {
@@ -40,4 +42,14 @@ CLEANING_CONFIG = {
     "confidence_threshold": 0.85,
     "loss_percentile": 80,
     "min_token_length": 3,
+}
+
+TOXICCHAT_CONFIG = {
+    "dataset_name": "lmsys/toxic-chat",
+    "dataset_version": "toxicchat0124",
+    "text_column": "user_input",
+    "label_column": "toxicity",
+    "human_annotation_column": "human_annotation",
+    "val_size": 0.15,
+    "min_toxic_samples": 30,
 }
