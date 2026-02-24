@@ -1,0 +1,42 @@
+{
+  "0.0": {
+    "prauc_mean": 0.6281,
+    "prauc_std": 0.0,
+    "f1_macro_mean": 0.6022,
+    "f1_macro_std": 0.0,
+    "f1_weighted_mean": 0.9155,
+    "f1_weighted_std": 0.0,
+    "accuracy_mean": 0.9378,
+    "accuracy_std": 0.0
+  },
+  "0.1": {
+    "prauc_mean": 0.6048,
+    "prauc_std": 0.0176,
+    "f1_macro_mean": 0.6177,
+    "f1_macro_std": 0.0095,
+    "f1_weighted_mean": 0.9182,
+    "f1_weighted_std": 0.0017,
+    "accuracy_mean": 0.9389,
+    "accuracy_std": 0.0009
+  },
+  "0.2": {
+    "prauc_mean": 0.5316,
+    "prauc_std": 0.0082,
+    "f1_macro_mean": 0.6229,
+    "f1_macro_std": 0.0062,
+    "f1_weighted_mean": 0.9191,
+    "f1_weighted_std": 0.001,
+    "accuracy_mean": 0.9393,
+    "accuracy_std": 0.0002
+  },
+  "0.4": {
+    "prauc_mean": 0.1845,
+    "prauc_std": 0.0101,
+    "f1_macro_mean": 0.5759,
+    "f1_macro_std": 0.0074,
+    "f1_weighted_mean": 0.8671,
+    "f1_weighted_std": 0.0039,
+    "accuracy_mean": 0.8479,
+    "accuracy_std": 0.0063
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "0.1": {
+    "noisy_baseline": {
+      "prauc_mean": 0.6048,
+      "prauc_std": 0.0176,
+      "f1_macro_mean": 0.6177,
+      "f1_macro_std": 0.0095,
+      "f1_weighted_mean": 0.9182,
+      "f1_weighted_std": 0.0017,
+      "accuracy_mean": 0.9389,
+      "accuracy_std": 0.0009
+    },
+    "confidence": {
+      "prauc_mean": 0.0833,
+      "prauc_std": 0.0115,
+      "f1_macro_mean": 0.4815,
+      "f1_macro_std": 0.0,
+      "f1_weighted_mean": 0.8945,
+      "f1_weighted_std": 0.0,
+      "accuracy_mean": 0.9288,
+      "accuracy_std": 0.0
+    },
+    "loss": {
+      "prauc_mean": 0.5176,
+      "prauc_std": 0.1058,
+      "f1_macro_mean": 0.5718,
+      "f1_macro_std": 0.0645,
+      "f1_weighted_mean": 0.9102,
+      "f1_weighted_std": 0.0112,
+      "accuracy_mean": 0.9354,
+      "accuracy_std": 0.0048
+    },
+    "heuristic": {
+      "prauc_mean": 0.6036,
+      "prauc_std": 0.0181,
+      "f1_macro_mean": 0.6148,
+      "f1_macro_std": 0.0106,
+      "f1_weighted_mean": 0.9177,
+      "f1_weighted_std": 0.002,
+      "accuracy_mean": 0.9386,
+      "accuracy_std": 0.0011
+    }
+  },
+  "0.2": {
+    "noisy_baseline": {
+      "prauc_mean": 0.5316,
+      "prauc_std": 0.0082,
+      "f1_macro_mean": 0.6229,
+      "f1_macro_std": 0.0062,
+      "f1_weighted_mean": 0.9191,
+      "f1_weighted_std": 0.001,
+      "accuracy_mean": 0.9393,
+      "accuracy_std": 0.0002
+    },
+    "confidence": {
+      "prauc_mean": 0.0795,
+      "prauc_std": 0.0079,
+      "f1_macro_mean": 0.4815,
+      "f1_macro_std": 0.0,
+      "f1_weighted_mean": 0.8945,
+      "f1_weighted_std": 0.0,
+      "accuracy_mean": 0.9288,
+      "accuracy_std": 0.0
+    },
+    "loss": {
+      "prauc_mean": 0.5336,
+      "prauc_std": 0.0123,
+      "f1_macro_mean": 0.5219,
+      "f1_macro_std": 0.0098,
+      "f1_weighted_mean": 0.9015,
+      "f1_weighted_std": 0.0018,
+      "accuracy_mean": 0.9317,
+      "accuracy_std": 0.0008
+    },
+    "heuristic": {
+      "prauc_mean": 0.5287,
+      "prauc_std": 0.0079,
+      "f1_macro_mean": 0.6209,
+      "f1_macro_std": 0.0102,
+      "f1_weighted_mean": 0.9188,
+      "f1_weighted_std": 0.0017,
+      "accuracy_mean": 0.9391,
+      "accuracy_std": 0.0007
+    }
+  },
+  "0.4": {
+    "noisy_baseline": {
+      "prauc_mean": 0.1845,
+      "prauc_std": 0.0101,
+      "f1_macro_mean": 0.5759,
+      "f1_macro_std": 0.0074,
+      "f1_weighted_mean": 0.8671,
+      "f1_weighted_std": 0.0039,
+      "accuracy_mean": 0.8479,
+      "accuracy_std": 0.0063
+    },
+    "confidence": {
+      "prauc_mean": 0.2105,
+      "prauc_std": 0.0155,
+      "f1_macro_mean": 0.4879,
+      "f1_macro_std": 0.0056,
+      "f1_weighted_mean": 0.8955,
+      "f1_weighted_std": 0.0009,
+      "accuracy_mean": 0.929,
+      "accuracy_std": 0.0002
+    },
+    "loss": {
+      "prauc_mean": 0.2331,
+      "prauc_std": 0.02,
+      "f1_macro_mean": 0.5797,
+      "f1_macro_std": 0.0058,
+      "f1_weighted_mean": 0.905,
+      "f1_weighted_std": 0.0023,
+      "accuracy_mean": 0.922,
+      "accuracy_std": 0.0037
+    },
+    "heuristic": {
+      "prauc_mean": 0.1751,
+      "prauc_std": 0.0103,
+      "f1_macro_mean": 0.573,
+      "f1_macro_std": 0.0042,
+      "f1_weighted_mean": 0.8676,
+      "f1_weighted_std": 0.0031,
+      "accuracy_mean": 0.8494,
+      "accuracy_std": 0.0062
+    }
+  }
+}

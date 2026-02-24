@@ -1,0 +1,142 @@
+{
+  "noise_levels": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "results": {
+    "0.05": {
+      "prauc_mean": 0.6274,
+      "prauc_std": 0.0106,
+      "f1_macro_mean": 0.6055,
+      "f1_macro_std": 0.0035,
+      "f1_weighted_mean": 0.9161,
+      "f1_weighted_std": 0.0006,
+      "accuracy_mean": 0.938,
+      "accuracy_std": 0.0004
+    },
+    "0.1": {
+      "prauc_mean": 0.6048,
+      "prauc_std": 0.0176,
+      "f1_macro_mean": 0.6177,
+      "f1_macro_std": 0.0095,
+      "f1_weighted_mean": 0.9182,
+      "f1_weighted_std": 0.0017,
+      "accuracy_mean": 0.9389,
+      "accuracy_std": 0.0009
+    },
+    "0.15": {
+      "prauc_mean": 0.5847,
+      "prauc_std": 0.0156,
+      "f1_macro_mean": 0.6264,
+      "f1_macro_std": 0.0106,
+      "f1_weighted_mean": 0.9199,
+      "f1_weighted_std": 0.002,
+      "accuracy_mean": 0.9399,
+      "accuracy_std": 0.0011
+    },
+    "0.2": {
+      "prauc_mean": 0.5316,
+      "prauc_std": 0.0082,
+      "f1_macro_mean": 0.6229,
+      "f1_macro_std": 0.0062,
+      "f1_weighted_mean": 0.9191,
+      "f1_weighted_std": 0.001,
+      "accuracy_mean": 0.9393,
+      "accuracy_std": 0.0002
+    },
+    "0.25": {
+      "prauc_mean": 0.4696,
+      "prauc_std": 0.0083,
+      "f1_macro_mean": 0.6494,
+      "f1_macro_std": 0.0106,
+      "f1_weighted_mean": 0.923,
+      "f1_weighted_std": 0.0019,
+      "accuracy_mean": 0.9397,
+      "accuracy_std": 0.0012
+    },
+    "0.3": {
+      "prauc_mean": 0.3822,
+      "prauc_std": 0.03,
+      "f1_macro_mean": 0.6556,
+      "f1_macro_std": 0.0042,
+      "f1_weighted_mean": 0.9222,
+      "f1_weighted_std": 0.0011,
+      "accuracy_mean": 0.9363,
+      "accuracy_std": 0.0024
+    },
+    "0.35": {
+      "prauc_mean": 0.2562,
+      "prauc_std": 0.026,
+      "f1_macro_mean": 0.6242,
+      "f1_macro_std": 0.0099,
+      "f1_weighted_mean": 0.9049,
+      "f1_weighted_std": 0.0016,
+      "accuracy_mean": 0.9093,
+      "accuracy_std": 0.0022
+    },
+    "0.4": {
+      "prauc_mean": 0.1845,
+      "prauc_std": 0.0101,
+      "f1_macro_mean": 0.5759,
+      "f1_macro_std": 0.0074,
+      "f1_weighted_mean": 0.8671,
+      "f1_weighted_std": 0.0039,
+      "accuracy_mean": 0.8479,
+      "accuracy_std": 0.0063
+    }
+  },
+  "tipping_point": {
+    "noise_level": 0.2,
+    "prauc_mean": 0.5316,
+    "prauc_std": 0.0082,
+    "finding": "classifier degrades nonlinearly past 20% noise (std \u00b10.0082)"
+  },
+  "piecewise_fit": {
+    "left": [
+      [
+        0.05,
+        0.6332499999999996
+      ],
+      [
+        0.1,
+        0.6024999999999997
+      ],
+      [
+        0.15,
+        0.5717499999999999
+      ],
+      [
+        0.2,
+        0.5409999999999999
+      ]
+    ],
+    "right": [
+      [
+        0.2,
+        0.5463399999999998
+      ],
+      [
+        0.25,
+        0.45557999999999993
+      ],
+      [
+        0.3,
+        0.3648199999999999
+      ],
+      [
+        0.35,
+        0.27405999999999997
+      ],
+      [
+        0.4,
+        0.1832999999999999
+      ]
+    ]
+  }
+}

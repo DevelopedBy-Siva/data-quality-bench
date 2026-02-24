@@ -10,3 +10,5 @@ tqdm==4.66.1
 accelerate==0.24.1
 pyarrow==20.0.0
 transformers==4.35.0
+sentencepiece==0.1.99
+protobuf==4.23.4
