@@ -24,11 +24,14 @@ DEFAULT_SAMPLES = 500
 def run_validation(
     seeds: list[int] = DEFAULT_SEEDS,
     samples: int = DEFAULT_SAMPLES,
+    baseline: str = "toxicchat",
     save: bool = False,
 ) -> list[dict]:
 
     print(f"\nNoiseCliff Gate Validation")
-    print(f"seeds={seeds}  samples={samples}  noise_levels={NOISE_LEVELS}\n")
+    print(
+        f"baseline={baseline}  seeds={seeds}  samples={samples}  noise_levels={NOISE_LEVELS}\n"
+    )
 
     print("Loading ToxicChat...")
     splits = load_toxicchat()
@@ -39,7 +42,7 @@ def run_validation(
         f"(toxic: {sum(labels)} / {len(labels)} = {sum(labels)/len(labels)*100:.1f}%)\n"
     )
 
-    estimator = NoiseEstimator()
+    estimator = NoiseEstimator(baseline=baseline)
     rows = []
 
     for noise_level in NOISE_LEVELS:
@@ -304,6 +307,12 @@ def main() -> None:
         description="Validate NoiseCliff quality gate against known noise levels"
     )
     parser.add_argument(
+        "--baseline",
+        type=str,
+        default="toxicchat",
+        help="Baseline name to validate against (default: toxicchat)",
+    )
+    parser.add_argument(
         "--seeds",
         type=int,
         nargs="+",
@@ -326,6 +335,7 @@ def main() -> None:
     run_validation(
         seeds=args.seeds,
         samples=args.samples,
+        baseline=args.baseline,
         save=args.save,
     )
 
